@@ -13,3 +13,5 @@ def gaseste_culoare_lalea():
 def gaseste_culoare_random():
     colors = ['rosu', 'portocaliu', 'galben', 'roz', 'mov', 'alb']
     return random.choice(colors)
+
+
