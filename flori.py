@@ -22,3 +22,11 @@ def crin_culoare():
     
     return ret
 
+@app.route("/floare/culoare", methods=['GET'])
+def culoare_random():
+    c = culoare.gaseste_culoare_random()
+    ret = "<pre>"
+    ret += f"Culoare floare random: {c}\n"
+    ret += "</pre>"
+    
+    return ret
