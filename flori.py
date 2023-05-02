@@ -21,12 +21,12 @@ def crin_culoare():
     ret += "</pre>"
     
     return ret
-@app.route("/floare/culoare", methods=['GET'])
-def culoare_random():
-    c = culoare.gaseste_culoare_random()
+
+@app.route("/lalea/culoare", methods=['GET'])
+def lalea_culoare():
+    c = culoare.gaseste_culoare_lalea()
     ret = "<pre>"
-    ret += f"Culoare floare random: {c}\n"
+    ret += f"Culoare lalea: {c}\n"
     ret += "</pre>"
     
     return ret
-
